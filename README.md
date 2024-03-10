@@ -2,7 +2,7 @@
 The project develops a web server capable of handling one HTTP request at a time. The server should accept and parse the HTTP request, retrieve the requested file from the server's file system, construct an HTTP response message with appropriate header lines, and send the response directly to the client. If the requested file is not found, the server should respond with an "HTTP 404 Not Found" message.
 
 ## Design Overview
-The project is designed to handle HTTP requests sequentially using TCP sockets in Python. The server listens for incoming connections on a specified address and port. Upon receiving a connection, it accepts and parses the HTTP request message from the client. It then extracts the requested file name from the request, reads the corresponding file from the server's file system, and constructs an HTTP response message containing the file content preceded by header lines. If the requested file is not found, the server sends an "HTTP 404 Not Found" response. Finally, the server sends the HTTP response message back to the client and closes the connection.
+The project is designed to handle HTTP requests sequentially using Python. It employs TCP sockets for communication.
 
 ## Functionality
 `server`:
