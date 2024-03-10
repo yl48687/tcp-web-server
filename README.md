@@ -5,7 +5,7 @@ The project develops a web server capable of handling one HTTP request at a time
 The project is designed to handle HTTP requests sequentially using Python. It employs TCP sockets for communication.
 
 ## Functionality
-`server`:
+`server.py`:
 - Listens for incoming connections from clients. Upon receiving a connection request, accepts the connection and creates a new socket for communication.
 - Receives the HTTP request message from the connected client.
 - Parses the HTTP request message to extract the name of the file requested by the client.
